@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NeroStream</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="font-weight: bold;">
+                <img src="img/Nt.png" alt="" width="50" class="d-inline-block align-text-auto" />
+                NEROSTREAM
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="movie.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#populer">Populer</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Genre
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Horor</a></li>
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#populer">Populer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Slider--> 
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1613376023733-0a73315d9b06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption center-caption">
+                        <h5 class="big-text">Enjoy on your Movie</h5>
+                        <p class="p-text">Some representative placeholder content for the first slide.</p>
+                        <a role="button" class="btns btn btn-danger" href="movie.html">Watch Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1620336655052-b57986f5a26a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption center-caption">
+                        <h5 class="big-text">Unlimited movies and more.</h5>
+                        <p class="p-text">Some representative placeholder content for the second slide.</p>
+                        <a role="button" class="btns btn btn-danger" href="movie.html">Watch Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption center-caption">
+                        <h5 class="big-text">Website Stream Movie no Ads</h5>
+                        <p class="p-text">Some representative placeholder content for the third slide.</p>
+                        <a role="button" class="btns btn btn-danger" href="movie.html">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--Spacer-->
+    <div class="spacer">
+    </div>
+
+    <!--Popular Movies-->
+    <section id="populer">
+        <div style="background-color: black; padding-top: 50px; padding-bottom: 50px;">
+            <div class="container">
+                <h1 class="big-textp text-center">Populer Movies.</h1>
+                <p class="text-pp text-center mb-4" style="color: white;">Watch on Smart TVs, Chromecast, Apple TV, Blue-ray
+                    players, and more.</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 rounded" style="border: black;">
+                            <img src="https://cdn1-production-images-kly.akamaized.net/6cc0BVJ_apBvKpJUtep9Tjc32oU=/1280x1706/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4255322/original/009305300_1670571872-AAAABa9GZZNgFUKaeGE067Y2Hxd4HFKvaSNqAJTqV5G1R25ZbKk4hRbfRk9Sw4lIIXIFuFn5PwHg7BFlWKUShXVN7hFNHjvkhjWEqQq4H4eGkRAFyRg6M3VBgReaXsfu98SfcBK0Wg.jpg"
+                                height="450px" width="250px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="nav-link card-title">Lookism (2022)</h5>
+                                <p class="card-p">08. Dec. 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 rounded" style="border: black;">
+                            <img src="https://image.tmdb.org/t/p/w185/8yhtzsbBExY8mUct2GOk4LDDuGH.jpg" height="450px"
+                                width="250px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="nav-link card-title">Mortal Kombat (2021)</h5>
+                                <p class="card-p">07. Apr. 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 rounded" style="border: black;">
+                            <img src="https://image.tmdb.org/t/p/w185/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" height="450px"
+                                width="250px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="nav-link card-title">Harry Potter and the Sorcerer's Stone (2001)</h5>
+                                <p class="card-p">16. Nov. 2001</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a role="button" class="btn btn-danger" href="movie.html">See all</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Spacer-->
+    <div class="spacer">
+    </div>
+
+    <footer style="background-color: black; padding-top: 50px; padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <img src="img/Nt.png" alt="" width="50" class="mb-3">
+                    <p class="text-ab text-white">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages..</p>
+                        <ul class="list-inline mt-4">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <p class="text-white">Original Series</p>
+                    <ul class="list-unstyled mt-0">
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Apple TV+
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Amazon
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Disney+
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                HBO
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Netflix
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                The CW
+                            </a>
+                        </li><br>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <p class="text-white">Category</p>
+                    <ul class="list-unstyled mt-0">
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Action
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Adventure
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Anime
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Animation
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Comedy
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Drama
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Horror
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-danger">
+                                Sci-Fi
+                            </a>
+                        </li>
+                    </ul><br>
+                </div>
+
+                <!--Spacer-->
+                <div class="spacerft">
+                </div><br>
+
+                <div>
+                    <p class="text-pft text-white">Copyright © 2023 by NeroStream. All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
